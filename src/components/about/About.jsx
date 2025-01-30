@@ -14,13 +14,9 @@ const About =()=>{
             <img src={AboutImg} alt="" className="about__img" />
             <div className="about__data">
                 <Info/>
-                <p className="about__description">As a recent graduate in Computer Science with a strong interest in Artificial Intelligence, I am excited to apply my
-skills and knowledge to real-world challenges. I have a solid foundation in programming languages such as Java,
-Python, and C++, and have experience working on projects involving data structures, algorithms, and software design.
-In addition to my technical skills, I am a self-motivated and detail-oriented individual with excellent problem-solving
-and communication skills. I am passionate about using AI to solve complex problems and drive innovation, and I am
-eager to continue learning and growing as a software engineer in this field. I am confident that I can contribute to the
-success of your team and make a meaningful impact with my work</p>
+                <p className="about__description">As a Master’s student in Artificial Intelligence with a background in Computer Science, I am eager to apply my skills to real-world challenges. I have a strong foundation in programming languages such as Java, Python, and C++, along with experience in data structures, algorithms, and software design. My academic journey has deepened my expertise in AI, including machine learning, deep learning, and data-driven decision-making.
+
+I am a self-motivated, detail-oriented professional with strong problem-solving and communication skills. Passionate about leveraging AI to solve complex problems and drive innovation, I am committed to continuous learning and growth. I am confident that my skills and enthusiasm will contribute to the success of your team and help create impactful AI solutions.</p>
             
             <a download="" href = {CV} className="button button--flex"> Download CV
             <svg
@@ -49,6 +45,15 @@ success of your team and make a meaningful impact with my work</p>
                 ></path>
               </svg>
 
+            </a>
+            <a href ="https://www.credly.com/users/manish-darji/badges" className="button button--flex">Online Certification 
+            <svg 
+            xmlns="http://www.w3.org/2000/svg"
+            width="25" 
+            height="25"
+            viewBox="0 0 24 24">
+              <path fill="var(--container-color)" d="M14 2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3v3l2-1l2 1v-3h3a2 2 0 0 0 2-2V7m-5 8v2l-2-1l-2 1v-2l-2-1l2-1v-2l2 1l2-1v2l2 1m-3-6V3.5L17.5 8Z"
+              /></svg>
             </a>
             </div>
         </div>

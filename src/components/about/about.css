@@ -23,8 +23,8 @@
     border-radius: 0.75rem;
     text-align: center;
     padding: 1rem 1.25rem;
-
 }
+
 .about__icon{
     font-size: 1.5rem;
     color: var(--title-color);
@@ -41,7 +41,11 @@
 .about__discription{
     padding: 0 4rem 0 0;
     margin-bottom: var(--mb-2-5);
-
+}
+.button
+{
+    margin-top: 20px;
+    margin-right: 50px;
 }
 
 /*=============== BREAKPOINTS ===============*/

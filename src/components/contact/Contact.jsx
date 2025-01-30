@@ -33,19 +33,6 @@ const Contact = () =>{
                         <a href="mailto:msnish.p001@gmail.com" className="contact__button">Write Me {""}<i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                     </div>
 
-                    <div className="contact__card">
-                        <i className="bx bxl-whatsapp contact__card-icon"></i>
-                        <h3 className="contact__card-title">WhatsApp</h3>
-                        <span className="contact__card-data">+9779808100303</span>
-                        <a href="https://api.whatsapp.com/send?phone=+9779808100303&text=Hello, more information!" className="contact__button">Write Me {""}<i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
-                    </div>
-
-                    <div className="contact__card">
-                        <i className="bx bxl-messenger contact__card-icon"></i>
-                        <h3 className="contact__card-title">Messenger</h3>
-                        <span className="contact__card-data">Ash Ish lio</span>
-                        <a href="https://m.me/ashish.lio.3" className="contact__button">Write Me {""}<i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
-                    </div>
                 </div>
             </div>
 
