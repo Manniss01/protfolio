@@ -1,7 +1,7 @@
 {
   "name": "portfolio_lucas",
   "version": "0.1.0",
-  "homepage": "https://manniss01.github.io/protfolio",
+  "homepage": "https://www.lukasaiengineer.com/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
