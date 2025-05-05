@@ -57,8 +57,7 @@ const Data = () => {
                 </svg>
             </h1>
             <h3 className="home__subtitle">AI Enginner</h3>
-            <p className="home__description">I'm a software engineer based on artificial intelligence,
-            and I'm very passionate and dedicate to my Work.</p>
+            <p className="home__description">I'm an AI Engineer with a strong passion for innovation, dedicated to my work and actively engaged in AI research to drive meaningful advancements in the field.</p>
             <a href="#contact" className="button button--flex">
               Say Hello
               <svg

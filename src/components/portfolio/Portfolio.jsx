@@ -14,7 +14,7 @@ import { Pagination } from "swiper";
 
 const Portfolio = () => {
     return(
-        <section className="Portfolio">
+        <section className="Portfolio" id = "portfolio">
             <h2 className="section__title">Portfolio</h2>
             <span className="section__subtitle">My Work</span>
 

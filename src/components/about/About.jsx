@@ -10,14 +10,24 @@ const About =()=>{
         <section className="about section" id="about">
           <h2 className="section__title">About Me</h2>
         <span className="section__subtitle">My Introduction</span>
-        <div className="about__container container grid">
-            <img src={AboutImg} alt="" className="about__img" />
-            <div className="about__data">
-                <Info/>
-                <p className="about__description">As a Master’s student in Artificial Intelligence with a background in Computer Science, I am eager to apply my skills to real-world challenges. I have a strong foundation in programming languages such as Java, Python, and C++, along with experience in data structures, algorithms, and software design. My academic journey has deepened my expertise in AI, including machine learning, deep learning, and data-driven decision-making.
+        <img src={AboutImg} alt="" className="about__img" />
+        <div className="about__info">
+      <Info />
+    </div>  
+        <div className="about__container container grid">  
+            <div className="about__data">   
+            <p className="about__description">
+    I am a highly skilled Artificial Intelligence Engineer with a robust background in Computer Science and a focus on developing innovative solutions to complex, real-world challenges.
+    With expertise in machine learning, deep learning, and data-driven systems, I leverage cutting-edge technologies to design and deploy intelligent systems that enhance efficiency, decision-making, and automation.<br /><br />
 
-I am a self-motivated, detail-oriented professional with strong problem-solving and communication skills. Passionate about leveraging AI to solve complex problems and drive innovation, I am committed to continuous learning and growth. I am confident that my skills and enthusiasm will contribute to the success of your team and help create impactful AI solutions.</p>
-            
+    I bring a diverse set of technical skills, including proficiency in Java, Python, and C++, as well as hands-on experience in data structures, algorithms, and software architecture.
+    Over the course of my career, I have worked on various high-impact projects, ranging from developing advanced AI models to creating scalable software solutions for businesses. My approach is rooted in applying 
+    machine learning techniques to drive actionable insights and solve critical problems for organizations.<br /> <br />
+
+    Throughout my career, I’ve worked with cross-functional teams to deliver AI-driven solutions, optimizing operations and pushing technological boundaries. My expertise spans across full-stack development, AI ethics, and human-computer interaction, ensuring that the systems I create are both cutting-edge and user-centric.
+    I am passionate about continuous improvement and actively seek opportunities to collaborate, innovate, and contribute to the advancement of AI technologies. My mission is to create intelligent systems that not only improve business outcomes but also have a positive impact on society.
+
+                  </p>
             <a download="" href = {CV} className="button button--flex"> Download CV
             <svg
                 class="button__icon"
