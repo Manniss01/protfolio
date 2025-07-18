@@ -1,8 +1,22 @@
 .skills__container{
-    grid-template-columns: repeat(2, 350px);
+    grid-template-columns: repeat(3, 350px);
     column-gap: 3rem;
     justify-content: center;
 }
+
+.skills__container > div {
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.skills__container > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
 
 .skills__content{
     background-color: var(--contaier-color);
@@ -10,6 +24,8 @@
     padding: 2rem 4rem;
     border-radius: 1.25rem;
 }
+
+
 
 .skills__title{
     font-size:var(--normal-font-size);

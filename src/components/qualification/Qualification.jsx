@@ -29,14 +29,15 @@ const Qualification = () =>{
 
                 <div className="qualification__sections">
                     <div className={toggleState === 1 ? "qualification__content qualification__content-active ": "qualification__content"}>
+
                         <div className="qualification__data">
 
                             <div>
-                                <h3 className="qualification__title">BSc.( Honours in Computer Science)</h3>
-                                <span className="qualification__subtitle">University of Wolverhampton</span>
+                                <h3 className="qualification__title">MSc.( Artificial Intelligence and Human Factors)</h3>
+                                <span className="qualification__subtitle">Coventry University</span>
 
                                 <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i> 2019 – 2022
+                                    <i className="uil uil-calendar-alt"></i> 2024 – 2025
                                 </div>
                             </div>
 
@@ -58,32 +59,12 @@ const Qualification = () =>{
                             </div>
 
                             <div>
-                                <h3 className="qualification__title">School Leaving Certificate (S.L.C)</h3>
-                                <span className="qualification__subtitle">St. Lawrence High School </span>
+                                <h3 className="qualification__title">BSc.( Honours in Computer Science)</h3>
+                                <span className="qualification__subtitle">University of Wolverhampton </span>
 
                                 <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i> 2017 – 2019
+                                    <i className="uil uil-calendar-alt"></i> 2019 – 2022
                                 </div>
-                            </div>
-
-
-                        </div>
-
-
-                        <div className="qualification__data">
-
-                            <div>
-                                <h3 className="qualification__title">Secondary Education Examination (S.E.E)</h3>
-                                <span className="qualification__subtitle">Pragati High School</span>
-
-                                <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i>2017
-                                </div>
-                            </div>
-
-                            <div>
-                                <span className="qualification__rounder"></span>
-                                <span className="qualification__line"></span>
                             </div>
 
 
@@ -93,10 +74,11 @@ const Qualification = () =>{
 
 
                     <div className={toggleState === 2 ? "qualification__content qualification__content-active ": "qualification__content"}>
+
                         <div className="qualification__data">
 
                             <div>
-                                <h3 className="qualification__title">IT Assistant</h3>
+                                <h3 className="qualification__title">Information Technology Assistant</h3>
                                 <span className="qualification__subtitle">The Nepal Distilleries PVT.LTD</span>
 
                                 <div className="qualification__calender">
@@ -111,24 +93,46 @@ const Qualification = () =>{
 
 
                         </div>
+                        
+                        <div className="qualification__data">
+                            <div></div>
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
+                            </div>
+                            
+
+                            <div>
+                                <h3 className="qualification__title"> Software Engineer</h3>
+                                <span className="qualification__subtitle">The High Innovations</span>
+
+                                <div className="qualification__calender">
+                                    <i className="uil uil-calendar-alt"></i> 02/2021 – 12/2023
+                                </div>
+                            </div>
+
+                            
+
+
+                        </div>
 
                         <div className="qualification__data">
 
-                            <div></div>
+                            <div>
+                                <h3 className="qualification__title"> Software Engineer</h3>
+                                <span className="qualification__subtitle">Code Tara Pvt Ltd</span>
+
+                                <div className="qualification__calender">
+                                    <i className="uil uil-calendar-alt"></i> 01/2024 – 06/2024
+                                </div>
+                            </div>
 
                             <div>
                                 <span className="qualification__rounder"></span>
                                 <span className="qualification__line"></span>
                             </div>
 
-                            <div>
-                                <h3 className="qualification__title">CEO</h3>
-                                <span className="qualification__subtitle">Aura High-Tech Technology </span>
-
-                                <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i> 2020 - Present
-                                </div>
-                            </div>
+                            
 
 
                         </div>
