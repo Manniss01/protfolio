@@ -7,6 +7,42 @@
     margin-bottom: var(--mb-2);
 }
 
+.qualification__tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--mb-2);
+    position: relative;
+    gap: 1rem;
+}
+
+/* Animate tab button hover */
+.qualification__button {
+    position: relative;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    color: var(--title-color);
+    margin: 0 var(--mb-1);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    border-radius: 0.5rem;
+}
+
+.qualification__button:hover {
+    background-color: var(--container-color);
+    transform: scale(1.05);
+}
+
+/* Active tab style */
+.qualification__active {
+    background-color: var(--first-color);
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+
 .qualification__button{
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
@@ -48,6 +84,17 @@
 .qualification__title{
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
+}
+/* Highlight title on hover/tap */
+.qualification__data:hover .qualification__title,
+.qualification__data:active .qualification__title {
+    color: black;
+    transition: color 0.2s ease;
+}
+
+/* Enhance clickable effect */
+.qualification__data {
+    cursor: pointer;
 }
 
 .qualification__subtitle{
@@ -115,3 +162,147 @@
     
   }
   
+  /* === Modal Styles === */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    animation: popUp 0.3s ease;
+    position: relative;
+}
+
+.modal h3 {
+    margin-top: 0;
+    color: var(--title-color-dark);
+}
+
+.modal p,
+.modal ul {
+    margin-top: 1rem;
+    font-size: var(--normal-font-size);
+}
+
+.modal ul {
+    padding-left: 1.5rem;
+}
+
+.modal-close {
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--first-color);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.modal-close:hover {
+    background-color: var(--first-color-alt);
+}
+
+@keyframes popUp {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* === Click Pop Animation === */
+.qualification__data.clicked {
+    animation: popScale 0.3s ease;
+}
+
+@keyframes popScale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* === Modal Styling === */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    animation: popUp 0.3s ease;
+    position: relative;
+}
+
+.modal h3 {
+    margin-top: 0;
+    color: var(--title-color-dark);
+}
+
+.modal p,
+.modal ul {
+    margin-top: 1rem;
+    font-size: var(--normal-font-size);
+}
+
+.modal ul {
+    padding-left: 1.5rem;
+}
+
+.modal-close {
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--first-color);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.modal-close:hover {
+    background-color: var(--first-color-alt);
+}
+
+@keyframes popUp {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

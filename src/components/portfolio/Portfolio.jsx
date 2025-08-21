@@ -1,7 +1,6 @@
 import React from "react";
 import "./portfolio.css";
 import { Data } from "./Data";
-import ImgProject from "../../assets/testimonial1.jpg"
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 

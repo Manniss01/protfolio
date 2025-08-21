@@ -1,4 +1,5 @@
-.skills__container{
+
+.skills__container {
     grid-template-columns: repeat(3, 350px);
     column-gap: 3rem;
     justify-content: center;
@@ -8,90 +9,126 @@
     padding: 1rem;
     background-color: #f9f9f9;
     border-radius: 10px;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
 }
 
-.skills__container > div:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+.skills__container > div:hover,
+.skills__container > div:focus,
+.skills__container > div:active {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow:
+        0 0 8px rgba(199, 200, 201, 0.6),
+        0 0 20px rgba(199, 199, 200, 0.4),
+        0 0 30px rgba(184, 186, 187, 0.3);
+    outline: none;
+}
+
+.skills__container > div:hover .skills_name,
+.skills__container > div:focus .skills_name,
+.skills__container > div:active .skills_name,
+.skills__container > div:hover .skills__level,
+.skills__container > div:focus .skills__level,
+.skills__container > div:active .skills__level {
+    text-decoration:
+        0 0 5px #d4d5d5,
+        0 0 10px #b4b7b7,
+        0 0 20px #d4d5d5,
+        0 0 40px #b9bdbd;
+    color: #303131;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+
+.row {
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 1.5rem;
+    margin-bottom: var(--mb-3);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; /* limit max width to avoid overflow */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.row:hover {
+    background-color: var(--skin-color);
+    transform: translateX(0.25rem);
+}
+
+.swiper-pagination {
+  bottom: -4px !important;
+  position: relative;
 }
 
 
-.skills__content{
-    background-color: var(--contaier-color);
+
+.skills__content {
+    background-color: var(--container-color); /* fixed typo */
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 2rem 4rem;
     border-radius: 1.25rem;
 }
 
-
-
-.skills__title{
-    font-size:var(--normal-font-size);
+.skills__title {
+    font-size: var(--normal-font-size);
     font-weight: var(--normal-medium);
     text-align: center;
     margin-bottom: var(--mb-1-5);
-
-
 }
 
-.skills__box{
+.skills__box {
     display: flex;
     justify-content: center;
     column-gap: 2.5rem;
 }
-.skills__group{
+
+.skills__group {
     display: grid;
     align-items: flex-start;
     row-gap: 1rem;
 }
-.skills__data{
+
+.skills__data {
     display: flex;
     column-gap: 0.5rem;
-
 }
 
-.skills .bx-badge-check{
+.skills .bx-badge-check {
     font-size: 1rem;
     color: var(--title-color);
 }
 
-.skills__level{
+.skills__level {
     font-size: var(--tiny-font-size);
 }
-
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
-    .skills__container{
+    .skills__container {
         grid-template-columns: max-content;
         row-gap: 2rem;
-
     }
-   
 }
-  /* For medium devices */
-  @media screen and (max-width: 576px) {
-    .skills__container{
+
+/* For medium devices */
+@media screen and (max-width: 576px) {
+    .skills__container {
         grid-template-columns: 1fr;
     }
-    .skills__content{
+    .skills__content {
         padding: 1.5rem;
     }
+}
 
-  }
-  
-  /* For small devices */
-  @media screen and (max-width: 350px) {
-
-    .skills__box{
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .skills__box {
         column-gap: 1.25rem;
     }
-    .skills_name{
+    .skills_name {
         font-size: var(--small-font-size);
-        
     }
-  
-  }
+}
